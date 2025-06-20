@@ -1,0 +1,47 @@
+.segmented-control {
+    display: inline-flex;
+    background-color: var(--input-base);
+    overflow: hidden;
+    height: 3rem;
+    border-radius: .5rem;
+    outline: 1px solid var(--input-stroke);
+    padding: .25rem ;
+    gap: .25rem;
+
+    & input[type="radio"]{
+        display: none;
+    }
+
+    & label {
+        cursor: pointer;
+        gap: .5rem;
+        transition: background 0.2s, color 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8.125rem;
+        border-radius: .25rem;
+        color: var(--input-placeholder);
+    }
+    & #icon {
+        color: var(--input-placeholder);
+    }
+
+    label:last-of-type{
+        border-right: none;
+    }
+
+    & input[type="radio"]:checked + label {
+        background-color: var(--input-stroke);
+        color: var(--text-heading);
+        font-weight: 600;
+    }
+    
+    & input[type="radio"]:checked + label #icon {
+        color:var(--brand-light);
+    }
+}
+
+
+
+

@@ -1,0 +1,31 @@
+form {
+    margin-top: 2.5rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+fieldset{
+    border: none;
+    display: grid;
+    gap: 1rem;
+
+}
+
+legend {
+    font: 700 1rem var(--font-family-baloo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+
+    p{
+        color: var(--text-heading);
+    }
+}
+
+legend + div {
+    margin-top: 1.5rem;
+}
+

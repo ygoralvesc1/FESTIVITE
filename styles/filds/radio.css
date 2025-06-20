@@ -1,0 +1,71 @@
+.colors {
+    margin-top: .75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+}
+
+.item-color{
+    background-color: var(--shape-button);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & input{
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    &:hover, &:focus-within{
+        border: 2px solid var(--brand-light);
+    }
+
+}
+
+.radio-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap:.5rem;
+    
+}
+
+.radio-inner{
+    width: 8.375rem;
+    height: 6.4375rem;
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+    
+    outline: 1px solid var(--input-stroke);
+
+    display: grid;
+    justify-items: center;
+    gap: 0.5rem;
+
+    padding:.25rem;
+
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;}
+
+    &:hover,
+    &:focus-within {
+        outline: 2px solid var(--brand-light);
+    }
+
+    &:has(:checked) {
+        outline: 2px solid var(--brand-light);
+    }
+
+}
+
+
